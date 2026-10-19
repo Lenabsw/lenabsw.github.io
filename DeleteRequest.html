@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Account Deletion - Wordy Duck</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            color: #222;
+            margin: 0;
+            padding: 40px 16px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 28px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        label {
+            display: block;
+            margin: 24px 0 8px;
+            font-weight: bold;
+        }
+
+        input {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+            background: #2878e8;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1765ce;
+        }
+
+        .note {
+            font-size: 14px;
+            margin-top: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Request Account Deletion</h1>
+
+        <p>
+            If you would like to delete your Wordy Duck account
+            and its associated game data, please enter your
+            account username below.
+        </p>
+
+        <p>
+            We will review your request and manually process
+            your account deletion.
+        </p>
+
+        <form action="https://formsubmit.co/YOUR_EMAIL"
+              method="POST">
+
+            <input type="hidden" name="_subject"
+                   value="Wordy Duck - Account Deletion Request">
+
+            <label for="account_name">Username</label>
+
+            <input type="text"
+                   id="account_name"
+                   name="Username"
+                   placeholder="Enter your Wordy Duck username"
+                   maxlength="100"
+                   required>
+
+            <button type="submit">
+                Request Account Deletion
+            </button>
+        </form>
+
+        <p class="note">
+            Your username will be used to identify your account
+            and process your deletion request. We will manually
+            review your request and delete your account and
+            associated data in accordance with our deletion policy.
+            For more information, please see our privacy policy.
+        </p>
+    </div>
+</body>
+</html>
